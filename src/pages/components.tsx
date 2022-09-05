@@ -87,7 +87,7 @@ export default function ComponentsPage() {
                     Check list of colors
                   </ButtonLink>
                 </div>
-                <div className='flex flex-wrap gap-2 text-xs font-medium'>
+                <div className='flex flex-wrap gap-2 font-medium text-xs'>
                   <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-50 text-black'>
                     50
                   </div>

@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        regular: ['Benzin1', ...fontFamily.sans],
+        medium: ['Benzin2', ...fontFamily.sans],
+        semibold: ['Benzin3', ...fontFamily.sans],
+        bold: ['Benzin4', ...fontFamily.sans],
+        extrabold: ['Benzin5', ...fontFamily.sans],
+        normal: ['Inter', ...fontFamily.sans],
       },
       colors: {
         primary: {

@@ -1,8 +1,37 @@
 import * as React from 'react';
+// declare global {
+//   interface Window {
+//     martian: any;
+//   }
+// }
 
 export default function Header() {
+  // const [btn, setBtn] = useState('Connect');
+  // const getProvider = () => {
+  //   if ('martian' in window) {
+  //     window.martian.connect();
+  //   } else {
+  //     window.open('https://www.martianwallet.xyz/', '_blank');
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   check().then((data) => {
+  //     data === true ? setBtn('hehe') : setBtn('Connect');
+  //   });
+  // }, []);
+
+  // async function check() {
+  //   let result = await window.martian.isConnected();
+  //   return result;
+  // }
+
+  // const disconnect = async () => {
+  //   await window.martian.disconnect();
+  // };
+
   return (
-    <header className='fixed top-0 z-50 w-full bg-none font-normal text-xl normal-case text-white md:text-2xl'>
+    <header className='fixed top-0 z-50 w-full bg-none font-normal text-sm normal-case text-white md:text-2xl'>
       <div className='mx-auto flex max-w-screen-xl items-center justify-between py-8 px-8'>
         <div>
           <a
@@ -94,7 +123,7 @@ export default function Header() {
           <a href='#'>Manage</a>
         </nav>
         <div className=' hidden items-center space-x-4 outline outline-4 outline-offset-8 md:block lg:flex'>
-          <button className=''>0x971c...95e86b</button>
+          <button className=''>Connect</button>
         </div>
       </div>
     </header>

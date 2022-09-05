@@ -7,7 +7,7 @@ const defaultMeta = {
   siteName: 'Aptos Name Service',
   description: 'Names for the metaverse.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://aptosnames.com/manage',
+  url: 'https://aptosnames.com/',
   type: 'website',
   robots: 'follow, index',
   /**

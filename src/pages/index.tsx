@@ -4,6 +4,8 @@ import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
+import Names from '@/pages/names';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -49,7 +51,9 @@ export default function HomePage() {
                       Update records and addresses <br className='md:hidden' />{' '}
                       for your names.{' '}
                     </div>
-                    <div className='pt-16'></div>
+                    <div className='pt-16'>
+                      <Names />
+                    </div>
                   </div>
                 </section>
               </div>

@@ -122,7 +122,7 @@ export default function Header() {
         <nav className='mr-8 hidden items-center justify-end space-x-8 lg:flex lg:w-0 lg:flex-1'>
           <a href='#'>Manage</a>
         </nav>
-        <div className=' hidden items-center space-x-4 outline outline-4 outline-offset-8 md:block lg:flex'>
+        <div className=' outline-3 hidden items-center space-x-4 outline outline-offset-8 md:block lg:flex'>
           <button className=''>Connect</button>
         </div>
       </div>

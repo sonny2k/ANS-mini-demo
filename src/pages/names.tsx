@@ -29,9 +29,9 @@ export default function Names() {
       <div
         style={{
           WebkitFilter:
-            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
           filter:
-            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
         }}
         className='mx-auto grid max-w-screen-xl justify-center gap-20 md:grid-cols-1 md:justify-items-center lg:grid-cols-1 lg:justify-items-center xl:grid-cols-2 xl:justify-items-start'
       >

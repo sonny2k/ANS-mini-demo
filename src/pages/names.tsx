@@ -28,10 +28,14 @@ export default function Names() {
     <main>
       <div
         style={{
-          WebkitFilter:
-            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
           filter:
-            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+          WebkitFilter:
+            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+          msFilter:
+            'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+          transition: 'filter 0.1s ease-in',
+          WebkitTransition: 'filter 0.1s ease-in',
         }}
         className='mx-auto grid max-w-screen-xl justify-center gap-20 md:grid-cols-1 md:justify-items-center lg:grid-cols-1 lg:justify-items-center xl:grid-cols-2 xl:justify-items-start'
       >
@@ -104,7 +108,19 @@ export default function Names() {
                 </div>
               </div>
             </div>
-            <div className=' bg-black'>
+            <div
+              className=' bg-black'
+              style={{
+                filter:
+                  'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+                WebkitFilter:
+                  'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+                msFilter:
+                  'drop-shadow(0px 0px 0.8px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white) drop-shadow(0px 0px 0px white)',
+                transition: 'filter 0.1s ease-in',
+                WebkitTransition: 'filter 0.1s ease-in',
+              }}
+            >
               <div className='flex flex-col px-5 pt-3 text-white'>
                 <div className='md:text-1xl self-end font-bold lg:text-2xl'>
                   EDIT

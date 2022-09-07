@@ -1,34 +1,20 @@
 import * as React from 'react';
-// declare global {
-//   interface Window {
-//     martian: any;
-//   }
-// }
 
-export default function Header() {
-  // const [btn, setBtn] = useState('Connect');
-  // const getProvider = () => {
-  //   if ('martian' in window) {
-  //     window.martian.connect();
-  //   } else {
-  //     window.open('https://www.martianwallet.xyz/', '_blank');
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   check().then((data) => {
-  //     data === true ? setBtn('hehe') : setBtn('Connect');
-  //   });
-  // }, []);
-
-  // async function check() {
-  //   let result = await window.martian.isConnected();
-  //   return result;
-  // }
-
-  // const disconnect = async () => {
-  //   await window.martian.disconnect();
-  // };
+export default function Header({
+  connected,
+  setConnected,
+  btnName,
+  setBtnName,
+}: any) {
+  function displayNames() {
+    if (connected === true) {
+      setConnected(false);
+      setBtnName('Connect');
+    } else if (connected === false) {
+      setConnected(true);
+      setBtnName('0XA24..2C');
+    }
+  }
 
   return (
     <header className='fixed top-0 z-50 w-full bg-none font-normal text-sm normal-case text-white md:text-2xl'>
@@ -123,7 +109,7 @@ export default function Header() {
           <a href='#'>Manage</a>
         </nav>
         <div className=' outline-3 hidden items-center space-x-4 outline outline-offset-8 md:block lg:flex'>
-          <button className=''>Connect</button>
+          <button onClick={displayNames}>{btnName}</button>
         </div>
       </div>
     </header>

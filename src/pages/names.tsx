@@ -115,9 +115,16 @@ export default function Names() {
               </div>
               <div className='h-20'></div>
               <div className='flex flex-row px-5 pb-6 text-white'>
-                <div className='font-extrabold text-2xl capitalize md:text-5xl'>
-                  {name}
-                </div>
+                {name.length <= 14 && (
+                  <div className='font-extrabold text-2xl capitalize md:text-5xl'>
+                    {name}
+                  </div>
+                )}
+                {name.length > 14 && (
+                  <div className='truncate font-extrabold text-2xl capitalize md:text-5xl'>
+                    {name}
+                  </div>
+                )}
               </div>
             </div>
           </a>

@@ -19,6 +19,20 @@ import Names from '@/pages/names';
 // to customize the default configuration.
 
 export default function HomePage() {
+  const [connected, setConnected] = React.useState<true | false>(false);
+  const [btnName, setBtnName] = React.useState<'Connect' | '0XA24..2C'>(
+    'Connect'
+  );
+  function displayNames() {
+    if (connected === true) {
+      setConnected(false);
+      setBtnName('Connect');
+    } else if (connected === false) {
+      setConnected(true);
+      setBtnName('0XA24..2C');
+    }
+  }
+
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
@@ -40,7 +54,12 @@ export default function HomePage() {
               ></div>
             </div>
             <div>
-              <Header />
+              <Header
+                connected={connected}
+                setConnected={setConnected}
+                btnName={btnName}
+                setBtnName={setBtnName}
+              />
               <div className='bg-black text-lg text-white'>
                 <section className='min-h-screen pt-32 pb-32'>
                   <div className='mx-auto flex max-w-screen-xl flex-col gap-8 px-4 pt-16 pb-12 text-center'>
@@ -52,7 +71,16 @@ export default function HomePage() {
                       for your names.{' '}
                     </div>
                     <div className='pt-16'>
-                      <Names />
+                      {connected === true ? (
+                        <Names />
+                      ) : (
+                        <button
+                          onClick={displayNames}
+                          className='bg-white px-8 py-4 text-lg text-black md:h-24 md:text-4xl'
+                        >
+                          Connect
+                        </button>
+                      )}
                     </div>
                   </div>
                 </section>

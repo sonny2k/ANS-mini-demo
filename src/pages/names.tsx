@@ -25,7 +25,7 @@ export default function Names() {
     '01',
   ];
 
-  function Names({ currentNames }) {
+  function Names({ currentNames }: any) {
     return (
       <div
         style={{
@@ -135,7 +135,7 @@ export default function Names() {
     );
   }
 
-  function PaginatedNames({ namesPerPage }) {
+  function PaginatedNames({ namesPerPage }: any) {
     const [currentNames, setCurrentNames] = React.useState<any | null>(null);
     const [pageCount, setPageCount] = React.useState(0);
     const [nameOffset, setNameOffset] = React.useState(0);
@@ -146,7 +146,7 @@ export default function Names() {
       setPageCount(Math.ceil(exampleNames.length / namesPerPage));
     }, [nameOffset, namesPerPage]);
 
-    const handlePageClick = (e) => {
+    const handlePageClick = (e: any) => {
       const newOffset = (e.selected * namesPerPage) % exampleNames.length;
       setNameOffset(newOffset);
     };

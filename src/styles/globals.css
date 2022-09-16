@@ -177,4 +177,12 @@
   ul li:last-child:hover a {
     background: transparent;
   }
+
+  ul li:first-child {
+    font-weight: 800;
+  }
+
+  ul li:first-child {
+    font-weight: 800;
+  }
 }

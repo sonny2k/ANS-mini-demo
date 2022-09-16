@@ -158,14 +158,16 @@ export default function Names() {
           </div>
           <div className='h-24'></div>
           <div className='flex justify-center'>
-            <ReactPaginate
-              previousLabel='<'
-              breakLabel='...'
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={5}
-              pageCount={pageCount}
-              nextLabel='>'
-            />
+            {currentNames && (
+              <ReactPaginate
+                previousLabel='<'
+                breakLabel='...'
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={5}
+                pageCount={pageCount}
+                nextLabel='>'
+              />
+            )}
           </div>
         </div>
       </>
